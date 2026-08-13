@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aritra Mukherjee | PhD Scholar, Intelligent Systems</title>
+    <style>
+        /* Updated Modern & Colorful Style */
+        :root {
+            /* Define your color palette */
+            --primary-color: #001F3F; /* Deep Sapphire Blue for headers */
+            --accent-color: #007BFF;   /* Cerulean Blue for links/accents */
+            --bg-color: #F8FAFC;       /* Very light grey-blue background */
+            --text-color: #334155;     /* Dark slate grey for body text */
+            --card-bg: #FFFFFF;        /* White for content blocks */
+        }
+
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            line-height: 1.7; 
+            max-width: 900px; /* Slightly wider modern layout */
+            margin: 0 auto; 
+            padding: 3rem 2rem; 
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* Standardize Headers */
+        h1, h2, h3 { 
+            color: var(--primary-color); 
+            font-weight: 700;
+        }
+
+        /* Header Section: Picture and Title */
+        header { 
+            display: flex;
+            align-items: center;
+            gap: 2.5rem; /* Space between photo and text */
+            border-bottom: 2px solid #E2E8F0; 
+            padding-bottom: 2.5rem; 
+            margin-bottom: 3rem; 
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+        }
+
+        /* Profile Picture Styling */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the photo isn't stretched */
+            border: 4px solid var(--primary-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .header-text h1 { margin: 0; font-size: 2.5rem; }
+        .tagline { 
+            font-size: 1.3rem; 
+            color: #64748B; 
+            margin: 0.2rem 0 1rem 0; 
+        }
+
+        /* Section Styling */
+        section { 
+            margin-bottom: 3rem; 
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 { 
+            border-left: 5px solid var(--accent-color); 
+            padding-left: 1rem; 
+            margin-top: 0; 
+            font-size: 1.75rem;
+        }
+
+        /* Link Styling */
+        a { 
+            color: var(--accent-color); 
+            text-decoration: none; 
+            font-weight: 500;
+            transition: color 0.2s ease-in-out; /* Smooth hover effect */
+        }
+        a:hover { color: var(--primary-color); text-decoration: underline; }
+
+        .contact-links { 
+            display: flex; 
+            gap: 1.5rem; 
+            font-weight: 600; 
+            margin-top: 1rem;
+        }
+
+        /* Experience and Education Entries */
+        .entry { margin-bottom: 1.8rem; position: relative; }
+        .role-title { font-weight: 700; font-size: 1.15rem; color: #111; }
+        .date { color: var(--accent-color); font-weight: 600; font-size: 0.95rem; position: absolute; right: 0; top: 0; }
+        .institution { margin-top: 0.1rem; color: #444; }
+
+        /* Research List Styling */
+        ul { padding-left: 1.5rem; }
+        li { margin-bottom: 0.75rem; }
+        strong { color: var(--primary-color); }
+
+        footer { text-align: center; color: #94A3B8; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #E2E8F0; }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 600px) {
+            header { flex-direction: column; text-align: center; gap: 1rem; }
+            .date { position: static; display: block; margin-top: 0.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Your Profile Picture Placeholder -->
+        <img src="profile-pic.jpeg" alt="Aritra Mukherjee Profile Picture" class="profile-img">
+        
+        <div class="header-text">
+            <h1>Aritra Mukherjee</h1>
+            <p class="tagline">PhD Scholar in Intelligent Systems | Machine Learning & Quantum Computing</p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com">Email</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">CV (PDF)</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a PhD student in the Department of Intelligent Systems at IIT Kanpur. My research explores the intersection of quantum computing, reinforcement learning, and convex optimization.</p>
+        <p>Previously, I completed my M.Tech in Electronics and Communication Engineering at IIT (ISM) Dhanbad, where my thesis investigated fundamental limits on entanglement-assisted quantum online prediction. Before returning to academia, I worked as an Assistant System Engineer at Tata Consultancy Services.</p>
+    </section>
+
+    <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+            <li><strong>Quantum Computing:</strong> Quantum neural networks, non-equilibrium quantum systems, entanglement protocols.</li>
+            <li><strong>Machine Learning:</strong> Reinforcement learning, online prediction, data science.</li>
+            <li><strong>Applied Mathematics:</strong> Convex optimization, linear algebra, measure theory.</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience & Education</h2>
+        
+        <div class="entry">
+            <span class="date">2026 – Present</span>
+            <div class="role-title">PhD Scholar, Intelligent Systems</div>
+            <div class="institution">Indian Institute of Technology (IIT) Kanpur</div>
+        </div>
+
+        <div class="entry">
+            <span class="date">2024 – 2026</span>
+            <div class="role-title">M.Tech, Electronics and Communication Engineering</div>
+            <div class="institution">Indian Institute of Technology (ISM) Dhanbad</div>
+        </div>
+
+        <div class="entry">
+            <span class="date">Oct 2022 – Jun 2024</span>
+            <div class="role-title">Assistant System Engineer</div>
+            <div class="institution">Tata Consultancy Services (TCS), Kolkata</div>
+        </div>
+        
+        <div class="entry">
+            <span class="date">2018 – 2022</span>
+            <div class="role-title">B.Tech, Electronics and Communication Engineering</div>
+            <div class="institution">Techno Main Salt Lake (MAKAUT)</div>
+        </div>
+    </section>
+
+    <footer>
+        <p><small>&copy; 2026 Aritra Mukherjee.</small></p>
+    </footer>
+</body>
+</html>
